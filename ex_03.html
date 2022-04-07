@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+        	.box {
+        		background-color : #00ff00;
+        		width : 650px;
+        		height : 250px;
+        		border-top : 3px dotted red;
+        		border-right : 2px dashed black;
+        		border-bottom : 4px inset blue;
+        		border-left : 10px groove orange;
+        		
+        	}
+        	.box1 {
+        		width : 300px;
+        		height : 150px;
+        		background-color : #ffff00;
+        		
+        		/* border-width : 7px;
+        		border-style : solid;
+        		border-color : #ff0000; */
+        		
+        		border : 5px solid #00ff00;
+        	}
+        </style>
+    </head>
+
+    <body>
+		<div class="box">
+			border 지정 방법 : <br>
+			1. 개별 지정 방법 : <br>
+			border-width: 속성값;  (두께지정)<br>
+    		border-style: 속성값;   (none, solid, dotted, dashed, double, groove, inset, outset, ridge)<br>
+   			border-color: 색상지정; <br>
+   			<br>
+			2. 한번에 지정 방법 : <br>
+			border-top: 두께   스타일  컬러;<br>
+    		border-right: 두께   스타일  컬러;<br>
+    		border-bottom: 두께   스타일  컬러;<br>
+    		border-left: 두께   스타일  컬러;<br>
+			
+		</div>
+		<br>
+		<div class="box1">
+		
+		</div>
+        
+
+    </body>
+
+</html>
