@@ -5,10 +5,109 @@
         <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
         <title>스타일시트</title>
         <!-- 스타일시트자리 -->
+        <style>
+        	table, th, td {
+        		border-collapse : collapse;
+        		/* collapse : 표(table)의 테두리와 셀(td)의 테두리 사이의 간격을 없앱니다. 겹치는 부분은 한 줄로 나타냅니다. */
+        		/* border : 1px solid #808080; */
+        		text-align : center;
+        	}
+        	thead>tr>th {
+        		border-top : 2px solid #808080;
+        		border-bottom : 2px solid #808080;
+        		background-color :  #dddddd;
+        	}
+        	tbody>tr>td {
+        		border-bottom : 1px dotted #808080;
+        	}
+        	/* .txt-left {
+        		text-align : left;
+        	} */
+        	tbody>tr:hover {
+        		background-color : #00ff00;
+        	}
+        	.tr-last {
+        		border-bottom : 2px solid #808080;
+        	}
+        	
+        </style>
     </head>
 
     <body>
-
+		<h1>mysite</h1>
+		<h2>게시판</h2>
+		<h3>일반 게시판</h3>
+		<h4>리스트</h4>
+		
+		<table>
+			<colgroup>
+				<col style="width : 50px">
+				<col style="width : 350px">
+				<col style="width : 100px">
+				<col style="width : 100px">
+				<col style="width : 120px">
+				<col style="width : 100px">
+			</colgroup>
+			
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>제목</th>
+					<th>글쓴이</th>
+					<th>조회수</th>
+					<th>작성일</th>
+					<th>관리</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>123</td>
+					<td class="txt-left"><a href="#">게시판 게시글입니다.</a></td>
+					<td>정우성</td>
+					<td>1234</td>
+					<td>2022-04-07</td>
+					<td>삭제</td>
+				</tr>
+				<tr>
+					<td>123</td>
+					<td class="txt-left"><a href="#">게시판 게시글입니다.</a></td>
+					<td>정우성</td>
+					<td>1234</td>
+					<td>2022-04-07</td>
+					<td>삭제</td>
+				</tr>
+				<tr>
+					<td>123</td>
+					<td class="txt-left"><a href="#">게시판 게시글입니다.</a></td>
+					<td>정우성</td>
+					<td>1234</td>
+					<td>2022-04-07</td>
+					<td>삭제</td>
+				</tr>
+				<tr>
+					<td>123</td>
+					<td class="txt-left"><a href="#">게시판 게시글입니다.</a></td>
+					<td>정우성</td>
+					<td>1234</td>
+					<td>2022-04-07</td>
+					<td>삭제</td>
+				</tr>
+				<tr class="tr-last">
+					<td>123</td>
+					<td class="txt-left"><a href="#">게시판 게시글입니다.</a></td>
+					<td>정우성</td>
+					<td>1234</td>
+					<td>2022-04-07</td>
+					<td>삭제</td>
+				</tr>
+			
+			</tbody>
+			
+			
+			
+			
+		
+		</table>
         
 
     </body>
